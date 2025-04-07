@@ -1,7 +1,7 @@
 # Shopco-ecommerce
 A modern and responsive e-commerce website  built with HTML and CSS. 
 
-#About
+# About
 ShopCo is a modern ecommerce clothing website built using only **HTML** and **CSS**. the design was inspired by Figma templates and crafted with attention to responsive layout and clean code structure.
 
 ---
