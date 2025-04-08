@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+    <script defer src="js/script.js"></script>
+    <title>Cart Page</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>
+        Sign up and get 20% off on your first order.
+        <a href="#">Sign Up Now</a>
+      </p>
+      <svg
+        class="cross-btn"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="#eee"
+        viewBox="0 0 256 256"
+      >
+        <path
+          d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+        ></path>
+      </svg>
+    </div>
+    <header class="header container sticky">
+      <div class="header-title">
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="menu-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="close-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h1 class="header-logo">SHOP.CO</h1>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">Shop</a></li>
+            <li><a class="nav-link" href="#">On Sale</a></li>
+            <li><a class="nav-link" href="#">New Arrivals</a></li>
+            <li><a class="nav-link" href="#">Brands</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-iconss">
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+          ></path>
+        </svg>
+        <div class="search-bar">
+          <svg
+            class="search-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#aaa"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+            ></path>
+          </svg>
+          <input type="text" placeholder="Search for products..." />
+        </div>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M241.55,64.74A12,12,0,0,0,232,60H60.23L51.56,28.79A12,12,0,0,0,40,20H20a12,12,0,0,0,0,24H30.88l34.3,123.49a28.09,28.09,0,0,0,27,20.51H191a28.09,28.09,0,0,0,27-20.51l25.63-92.28A12,12,0,0,0,241.55,64.74ZM194.8,161.07A4,4,0,0,1,191,164H92.16a4,4,0,0,1-3.85-2.93L66.9,84H216.21ZM108,220a20,20,0,1,1-20-20A20,20,0,0,1,108,220Zm104,0a20,20,0,1,1-20-20A20,20,0,0,1,212,220Z"
+          ></path>
+        </svg>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20ZM79.57,196.57a60,60,0,0,1,96.86,0,83.72,83.72,0,0,1-96.86,0ZM100,120a28,28,0,1,1,28,28A28,28,0,0,1,100,120ZM194,179.94a83.48,83.48,0,0,0-29-23.42,52,52,0,1,0-74,0,83.48,83.48,0,0,0-29,23.42,84,84,0,1,1,131.9,0Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <div class="container">
+      <section class="cart-page">
+        <nav class="breadcrumb">
+          <a href="home.html" target="_blank">Home</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#00000099"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+          <a class="cart" href="cart.html" target="_blank">Cart</a>
+        </nav>
+        <h2 class="cart-title">YOUR CART</h2>
+        <div class="cart-container">
+          <div class="cart-left">
+            <div class="product product-1">
+              <div>
+                <img src="assets/images/cart-1.png" alt="cart-image" />
+              </div>
+              <div class="product-text">
+                <div class="product-title">
+                  <h3>Gradient Graphic T-shirt</h3>
+                  <svg
+                    class="delete-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="#FF3333"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="p-size">Size: <span>Large</span></p>
+                <p class="p-size">Color: <span>White</span></p>
+
+                <div class="quantity-selection">
+                  <p>$145</p>
+                  <button class="minus">-<span>1</span>+</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div>
+                <img src="assets/images/cart-2.png" alt="cart-image" />
+              </div>
+              <div class="product-text">
+                <div class="product-title">
+                  <h3>Gradient Graphic T-shirt</h3>
+                  <svg
+                    class="delete-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="#FF3333"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="p-size">Size: <span>Large</span></p>
+                <p class="p-size">Color: <span>White</span></p>
+
+                <div class="quantity-selection">
+                  <p>$180</p>
+                  <button class="minus">-<span>1</span>+</button>
+                </div>
+              </div>
+            </div>
+            <div class="product product-3">
+              <div>
+                <img src="assets/images/cart-3.png" alt="cart-image" />
+              </div>
+              <div class="product-text">
+                <div class="product-title">
+                  <h3>Gradient Graphic T-shirt</h3>
+                  <svg
+                    class="delete-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="#FF3333"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="p-size">Size: <span>Large</span></p>
+                <p class="p-size">Color: <span>White</span></p>
+
+                <div class="quantity-selection">
+                  <p>$240</p>
+                  <button class="minus">-<span>1</span>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-cart">
+            <h4>Order Summary</h4>
+            <div class="Summary-items">
+              <div class="name">
+                <p>Subtotal</p>
+                <p>Discount (-20%)</p>
+                <p>Delivery Fee</p>
+              </div>
+
+              <div class="price">
+                <p>$565</p>
+                <p>-$113</p>
+                <p>$15</p>
+              </div>
+            </div>
+            <div class="promo-part">
+              <div class="promo-title">
+                <h5>Total</h5>
+                <span>$467</span>
+              </div>
+              <div class="promo-btns">
+                <input type="text" placeholder="Add promo code" />
+                <button>Apply</button>
+              </div>
+              <button class="checkout-btn">Go to Checkout &rightarrow;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="newsletter">
+          <p>STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <a href="#">Subscribe to Newsletter</a>
+          </form>
+        </div>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h1 class="footer-title">SHOP.CO</h1>
+            <p class="footer-description">
+              We have clothes that suits your style and which you are proud to
+              wear. From women to men.
+            </p>
+            <div class="footer-logo">
+              <img src="assets/logos/icons8-twitter-30.png" alt="twitter" />
+              <img src="assets/logos/icons8-facebook-30.png" alt="facebook" />
+              <img src="assets/logos/icons8-instagram-30.png" alt="instagram" />
+              <img src="assets/logos/icons8-github-30.png" alt="github" />
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>COMPANY</h4>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>HELP</h4>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>FAQ</h4>
+                <li><a href="#"> Account</a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payments</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>RESOURCES</h4>
+                <li><a href="#">Free eBooks</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Shop.co © 2000- <span class="year"> 2024 </span>, All Rights
+            Reserved
+          </p>
+          <p>designed by <strong>Kasib Zinar</strong></p>
+          <div>
+            <img class="bottom-logo" src="assets/logos/visa.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/round.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/paypal.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/apple-pay.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/google-pay.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

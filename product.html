@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/product.css" />
+    <script defer src="js/script.js"></script>
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>
+        Sign up and get 20% off on your first order.
+        <a href="#">Sign Up Now</a>
+      </p>
+      <svg
+        class="cross-btn"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="#eee"
+        viewBox="0 0 256 256"
+        ز
+      >
+        <path
+          d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+        ></path>
+      </svg>
+    </div>
+    <header class="header container sticky">
+      <div class="header-title">
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="menu-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="close-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h1 class="header-logo">SHOP.CO</h1>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">Shop</a></li>
+            <li><a class="nav-link" href="#">On Sale</a></li>
+            <li><a class="nav-link" href="#">New Arrivals</a></li>
+            <li><a class="nav-link" href="#">Brands</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-iconss">
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+          ></path>
+        </svg>
+        <div class="search-bar">
+          <svg
+            class="search-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#aaa"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+            ></path>
+          </svg>
+          <input type="text" placeholder="Search for products..." />
+        </div>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M241.55,64.74A12,12,0,0,0,232,60H60.23L51.56,28.79A12,12,0,0,0,40,20H20a12,12,0,0,0,0,24H30.88l34.3,123.49a28.09,28.09,0,0,0,27,20.51H191a28.09,28.09,0,0,0,27-20.51l25.63-92.28A12,12,0,0,0,241.55,64.74ZM194.8,161.07A4,4,0,0,1,191,164H92.16a4,4,0,0,1-3.85-2.93L66.9,84H216.21ZM108,220a20,20,0,1,1-20-20A20,20,0,0,1,108,220Zm104,0a20,20,0,1,1-20-20A20,20,0,0,1,212,220Z"
+          ></path>
+        </svg>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20ZM79.57,196.57a60,60,0,0,1,96.86,0,83.72,83.72,0,0,1-96.86,0ZM100,120a28,28,0,1,1,28,28A28,28,0,0,1,100,120ZM194,179.94a83.48,83.48,0,0,0-29-23.42,52,52,0,1,0-74,0,83.48,83.48,0,0,0-29,23.42,84,84,0,1,1,131.9,0Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="product-page">
+        <nav class="breadcrumb">
+          <a href="home.html" target="_blank">Home</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#00000099"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+          <a href="#">Shop</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#00000099"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+          <a href="#">Men</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#00000099"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+            ></path>
+          </svg>
+          <a class="t-shirt" href="product.html" target="_blank">T-shirt</a>
+        </nav>
+        <div class="product-container">
+          <div class="product-images">
+            <div class="left-images">
+              <img src="assets/images/product-img-1.png" alt="image" />
+              <img src="assets/images/product-img-1.png" alt="image" />
+              <img src="assets/images/product-img-2.webp" alt="image" />
+            </div>
+            <div class="right-image">
+              <img src="assets/images/product-img-1.png" alt="image" />
+            </div>
+          </div>
+          <div class="product-text-feature">
+            <div class="main-text">
+              <h2 class="product-title">ONLINE GRAPHIC T-SHIRT</h2>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">4.5/5</span>
+              </div>
+              <p class="price">
+                $130
+                <span class="old-price">$160</span>
+                <span class="discount">-40%</span>
+              </p>
+              <p class="description">
+                This graphic T-shirt which is perfect for every occasion.This
+                graphic T-shirt which is perfect for every occasion.
+              </p>
+            </div>
+            <div class="color-options">
+              <p class="option-text">select colors</p>
+              <div class="colors">
+                <button
+                  class="color-btn"
+                  style="background-color: #4f4631"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #314f4a"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #31344f"
+                ></button>
+              </div>
+            </div>
+            <div class="size-options">
+              <p class="option-text">Choose size</p>
+              <div class="btns">
+                <button class="btn-size">Small</button>
+                <button class="btn-size">Medium</button>
+                <button class="btn-size selected">Large</button>
+                <button class="btn-size">X-Large</button>
+              </div>
+            </div>
+            <div class="quantity-selection">
+              <div>
+                <button class="minus">-<span>1</span>+</button>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="reviews-section">
+        <div class="reviews-primary">
+          <h3>Product details</h3>
+          <h3>Rating and Reviews</h3>
+          <h3>FAQs</h3>
+        </div>
+        <div class="Reviews-control">
+          <div class="review-title">
+            <h4>All Reviews</h4>
+            <span class="review-number">(451)</span>
+          </div>
+          <div class="reviews-buttons">
+            <button class="filter-btn">
+              <svg
+                class="filter"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M64,105V40a8,8,0,0,0-16,0v65a32,32,0,0,0,0,62v49a8,8,0,0,0,16,0V167a32,32,0,0,0,0-62Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,56,152Zm80-95V40a8,8,0,0,0-16,0V57a32,32,0,0,0,0,62v97a8,8,0,0,0,16,0V119a32,32,0,0,0,0-62Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,128,104Zm104,64a32.06,32.06,0,0,0-24-31V40a8,8,0,0,0-16,0v97a32,32,0,0,0,0,62v17a8,8,0,0,0,16,0V199A32.06,32.06,0,0,0,232,168Zm-32,16a16,16,0,1,1,16-16A16,16,0,0,1,200,184Z"
+                ></path>
+              </svg>
+            </button>
+            <button class="latest-btn">
+              <span>Latest</span><span>&or;</span>
+            </button>
+            <button class="reviews-write-btn">Write a Review</button>
+          </div>
+        </div>
+        <div class="reiviews-list">
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Samantha D.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "I absolutely love this t-shirt! The design is unique and the
+              fabric feels so comfortable. As a fellow designer, I appreciate
+              the attention to detail. It's become my favorite go-to shirt."
+            </p>
+            <p class="review-date">Posted on August 14, 2023</p>
+          </div>
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Alex M.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "The t-shirt exceeded my expectations! The colors are vibrant and
+              the print quality is top-notch. Being a UI/UX designer myself, I'm
+              quite picky about aesthetics, and this t-shirt definitely gets a
+              thumbs up from me."
+            </p>
+            <p class="review-date">Posted on August 15, 2023</p>
+          </div>
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Ethan R.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "This t-shirt is a must-have for anyone who appreciates good
+              design. The minimalistic yet stylish pattern caught my eye, and
+              the fit is perfect. I can see the designer's touch in every aspect
+              of this shirt."
+            </p>
+            <p class="review-date">Posted on August 16, 2023</p>
+          </div>
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Olivia P.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "As a UI/UX enthusiast, I value simplicity and functionality. This
+              t-shirt not only represents those principles but also feels great
+              to wear. It's evident that the designer poured their creativity
+              into making this t-shirt stand out."
+            </p>
+            <p class="review-date">Posted on August 17, 2023</p>
+          </div>
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Liam K.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "This t-shirt is a fusion of comfort and creativity. The fabric is
+              soft, and the design speaks volumes about the designer's skill.
+              It's like wearing a piece of art that reflects my passion for both
+              design and fashion."
+            </p>
+            <p class="review-date">Posted on August 18, 2023</p>
+          </div>
+          <div class="review">
+            <div class="rating">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+            </div>
+            <div class="review-writer">
+              <h4>Ava H.</h4>
+              <img
+                src="assets/icons/icons8-check-mark-24.png"
+                alt="checkmark"
+              />
+            </div>
+            <p class="review-text">
+              "I'm not just wearing a t-shirt; I'm wearing a piece of design
+              philosophy. The intricate details and thoughtful layout of the
+              design make this shirt a conversation starter."
+            </p>
+            <p class="review-date">Posted on August 19, 2023</p>
+          </div>
+        </div>
+        <button class="load-more">Load More Reviews</button>
+      </section>
+      <section class="more-liking">
+        <h2 class="like-title">YOU MIGHT ALSO LIKE</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              class="all-images"
+              src="assets/images/polo.png"
+              alt="t-shirt"
+            />
+            <p class="name">Polo with Contrast Trims</p>
+            <div class="rating rating-product">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <span class="rate-number">4.0/5</span>
+            </div>
+            <p class="price price-product">
+              $212
+              <span class="old-price">$242</span>
+              <span class="discount">-20%</span>
+            </p>
+          </div>
+          <div class="product">
+            <img
+              class="all-images"
+              src="assets/images/graphic.png"
+              alt="t-shirt"
+            />
+            <p class="name">Gradient Graphic T-shirt</p>
+            <div class="rating rating-product">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+              <span class="rate-number">3.5/5</span>
+            </div>
+            <p class="price price-product">$145</p>
+          </div>
+          <div class="product">
+            <img
+              class="all-images"
+              src="assets/images/polo tiping.png"
+              alt="t-shirt"
+            />
+            <p class="name">Polo with Tipping Details</p>
+            <div class="rating rating-product">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img
+                src="assets/icons/icons8-star-half-empty-30.png"
+                alt="rate"
+              />
+              <span class="rate-number">4.5/5</span>
+            </div>
+            <p class="price price-product">$180</p>
+          </div>
+          <div class="product">
+            <img
+              class="all-images"
+              src="assets/images/black strip.png"
+              alt="t-shirt"
+            />
+            <p class="name">Black Striped T-shirt</p>
+            <div class="rating rating-product">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <span class="rate-number">5.0/5</span>
+            </div>
+            <p class="price price-product">
+              $120
+              <span class="old-price">$150</span>
+              <span class="discount">-30%</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="newsletter">
+          <p>STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <a href="#">Subscribe to Newsletter</a>
+          </form>
+        </div>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h1 class="footer-title">SHOP.CO</h1>
+            <p class="footer-description">
+              We have clothes that suits your style and which you are proud to
+              wear. From women to men.
+            </p>
+            <div class="footer-logo">
+              <img src="assets/logos/icons8-twitter-30.png" alt="twitter" />
+              <img src="assets/logos/icons8-facebook-30.png" alt="facebook" />
+              <img src="assets/logos/icons8-instagram-30.png" alt="instagram" />
+              <img src="assets/logos/icons8-github-30.png" alt="github" />
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>COMPANY</h4>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>HELP</h4>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>FAQ</h4>
+                <li><a href="#"> Account</a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payments</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>RESOURCES</h4>
+                <li><a href="#">Free eBooks</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Shop.co © 2000- <span class="year"> 2024 </span>, All Rights
+            Reserved
+          </p>
+          <p>designed by <strong>Kasib Zinar</strong></p>
+          <div>
+            <img class="bottom-logo" src="assets/logos/visa.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/round.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/paypal.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/apple-pay.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/google-pay.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <ion-icon class="btn" name="menu-outline"></ion-icon>
+      <ion-icon class="btn" name="close-outline"></ion-icon>
+    </footer>
+  </body>
+</html>

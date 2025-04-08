@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>
+        Sign up and get 20% off on your first order.
+        <a href="#">Sign Up Now</a>
+      </p>
+      <svg
+        class="cross-btn"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="#eee"
+        viewBox="0 0 256 256"
+      >
+        <path
+          d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+        ></path>
+      </svg>
+    </div>
+    <header class="header container sticky">
+      <div class="header-title">
+        <button class="btn-mobile-nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="menu-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-mobile-nav"
+            name="close-outline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h1 class="header-logo">SHOP.CO</h1>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#">Shop</a></li>
+            <li><a class="nav-link" href="#">On Sale</a></li>
+            <li><a class="nav-link" href="#">New Arrivals</a></li>
+            <li><a class="nav-link" href="#">Brands</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-iconss">
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+          ></path>
+        </svg>
+        <div class="search-bar">
+          <svg
+            class="search-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#aaa"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"
+            ></path>
+          </svg>
+          <input type="text" placeholder="Search for products..." />
+        </div>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M241.55,64.74A12,12,0,0,0,232,60H60.23L51.56,28.79A12,12,0,0,0,40,20H20a12,12,0,0,0,0,24H30.88l34.3,123.49a28.09,28.09,0,0,0,27,20.51H191a28.09,28.09,0,0,0,27-20.51l25.63-92.28A12,12,0,0,0,241.55,64.74ZM194.8,161.07A4,4,0,0,1,191,164H92.16a4,4,0,0,1-3.85-2.93L66.9,84H216.21ZM108,220a20,20,0,1,1-20-20A20,20,0,0,1,108,220Zm104,0a20,20,0,1,1-20-20A20,20,0,0,1,212,220Z"
+          ></path>
+        </svg>
+        <svg
+          class="search-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20ZM79.57,196.57a60,60,0,0,1,96.86,0,83.72,83.72,0,0,1-96.86,0ZM100,120a28,28,0,1,1,28,28A28,28,0,0,1,100,120ZM194,179.94a83.48,83.48,0,0,0-29-23.42,52,52,0,1,0-74,0,83.48,83.48,0,0,0-29,23.42,84,84,0,1,1,131.9,0Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero container">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              find clothes that matches your style
+            </h1>
+            <p class="hero-description">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your unique style with ease.
+            </p>
+            <button class="btn btn-shop">Shop Now</button>
+            <div class="achivement">
+              <div class="rating-item">
+                <span>200+</span>
+                <p>International Brands</p>
+              </div>
+              <div class="separator"></div>
+              <div class="rating-item">
+                <span>2,000+</span>
+                <p>High Quality Products</p>
+              </div>
+              <div class="separator"></div>
+              <div class="rating-item">
+                <span>30,000+</span>
+                <p>Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="hero-image"
+            src="assets/images/Rectangle_2__1_-removebg-preview.png"
+            alt="man and woman with stylish clothes"
+          />
+        </div>
+        <div class="brands">
+          <div class="brands-logo">
+            <h1>VERSACE</h1>
+            <h1>ZARA</h1>
+            <h1>GUCCI</h1>
+            <h1>PRADA</h1>
+            <h1>Calvin Klein</h1>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <section class="arrivals">
+          <h2 class="secondary">new arrivals</h2>
+          <div class="products">
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/t-shirt 1.png"
+                alt="t-shirt"
+              />
+              <p class="name">T-shirt with Tape Details</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">4.5/5</span>
+              </div>
+              <p class="price">$120</p>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/pant 1.png"
+                alt="Jeans"
+              />
+              <p class="name">Skinny Fit Jeans</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">3.5/5</span>
+              </div>
+              <p class="price">
+                $240
+                <span class="old-price">$260</span>
+                <span class="discount">-20%</span>
+              </p>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/shirt 1.png"
+                alt="shirt"
+              />
+              <p class="name">Checkerd Shirt</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">4.5/5</span>
+              </div>
+              <h3 class="price">$180</h3>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/t-shirt 2.png"
+                alt="t-shirt"
+              />
+              <p class="name">sleeve Striped T-shirt</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">4.5/5</span>
+              </div>
+              <p class="price">
+                $130
+                <span class="old-price">$160</span>
+                <span class="discount">-30%</span>
+              </p>
+            </div>
+          </div>
+          <a class="view" href="#">View All</a>
+        </section>
+
+        <section class="top-selling">
+          <h2 class="secondary">top selling</h2>
+          <div class="products">
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/shirt 3.png"
+                alt="shirt"
+              />
+              <p class="name">Vertical Striped Shirt</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <span class="rate-number">5.0/5</span>
+              </div>
+              <p class="price">
+                $212
+                <span class="old-price">$232</span>
+                <span class="discount">-20%</span>
+              </p>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/t-shirt 3.png"
+                alt="shirt"
+              />
+              <p class="name">Gourage Graphic T-shirt</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <span class="rate-number">4.0/5</span>
+              </div>
+              <p class="price">$145</p>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/short.png"
+                alt="shirt"
+              />
+              <p class="name">Loose Fit Bermuda Shorts</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <span class="rate-number">3.0/5</span>
+              </div>
+              <h3 class="price">$80</h3>
+            </div>
+            <div class="product">
+              <img
+                class="all-images"
+                src="assets/images/pant 2.png"
+                alt="Jeans"
+              />
+              <p class="name">Faded Skinny Jeans</p>
+              <div class="rating">
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img src="assets/icons/icons8-star-30.png" alt="rate" />
+                <img
+                  src="assets/icons/icons8-star-half-empty-30.png"
+                  alt="rate"
+                />
+                <span class="rate-number">4.5/5</span>
+              </div>
+              <p class="price">$210</p>
+            </div>
+          </div>
+          <a class="view" href="#">View All</a>
+        </section>
+        <section class="dress-style">
+          <h3 class="dress-title">browse by dress style</h3>
+          <div class="img-box-1">
+            <img
+              class="dress-img"
+              src="assets/images/image 1.png"
+              alt="causal-style"
+            />
+            <img
+              class="dress-img"
+              src="assets/images/image 2.png"
+              alt="formal-style"
+            />
+          </div>
+          <div class="img-box-2">
+            <img
+              class="dress-img"
+              src="assets/images/image 3.png"
+              alt="party-style"
+            />
+            <img
+              class="dress-img"
+              src="assets/images/image 4.png"
+              alt="gym-style"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="container">
+      <section class="customer-reviews">
+        <h2>our happy customers</h2>
+        <div class="customer-quotes">
+          <div class="quote">
+            <div class="stars">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+
+              <div class="man">
+                <h4>Sarah M.</h4>
+                <img
+                  src="assets/icons/icons8-check-mark-24.png"
+                  alt="checkmark"
+                />
+              </div>
+              <p class="statement">
+                "I'm blown away by the quality and style of the clothes I
+                received from Shop.co. From casual wear to elegant dresses,
+                every piece I've bought has exceeded my expectations.”
+              </p>
+            </div>
+          </div>
+          <div class="quote">
+            <div class="stars">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <div class="man">
+                <h4>Alex K.</h4>
+                <img
+                  src="assets/icons/icons8-check-mark-24.png"
+                  alt="checkmark"
+                />
+              </div>
+              <p class="statement">
+                "Finding clothes that align with my personal style used to be a
+                challenge until I discovered Shop.co. The range of options they
+                offer is truly remarkable, catering to a variety of tastes and
+                occasions.”
+              </p>
+            </div>
+          </div>
+          <div class="quote">
+            <div class="stars">
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <img src="assets/icons/icons8-star-30.png" alt="rate" />
+              <div class="man">
+                <h4>James L.</h4>
+                <img
+                  src="assets/icons/icons8-check-mark-24.png"
+                  alt="checkmark"
+                />
+              </div>
+              <p class="statement">
+                "As someone who's always on the lookout for unique fashion
+                pieces, I'm thrilled to have stumbled upon Shop.co. The
+                selection of clothes is not only diverse but also on-point with
+                the latest trends.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="newsletter">
+          <p>STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <a href="#">Subscribe to Newsletter</a>
+          </form>
+        </div>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h1 class="footer-title">SHOP.CO</h1>
+            <p class="footer-description">
+              We have clothes that suits your style and which you are proud to
+              wear. From women to men.
+            </p>
+            <div class="footer-logo">
+              <img src="assets/logos/icons8-twitter-30.png" alt="twitter" />
+              <img src="assets/logos/icons8-facebook-30.png" alt="facebook" />
+              <img src="assets/logos/icons8-instagram-30.png" alt="instagram" />
+              <img src="assets/logos/icons8-github-30.png" alt="github" />
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>COMPANY</h4>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>HELP</h4>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Delivery Details</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>FAQ</h4>
+                <li><a href="#"> Account</a></li>
+                <li><a href="#">Manage Deliveries</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Payments</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <ul>
+                <h4>RESOURCES</h4>
+                <li><a href="#">Free eBooks</a></li>
+                <li><a href="#">Development Tutorial</a></li>
+                <li><a href="#">How to - Blog</a></li>
+                <li><a href="#">Youtube Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Shop.co © 2000- <span class="year"> 2024 </span>, All Rights
+            Reserved
+          </p>
+          <p>designed by <strong>Kasib Zinar</strong></p>
+          <div>
+            <img class="bottom-logo" src="assets/logos/visa.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/round.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/paypal.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/apple-pay.png" alt="" />
+            <img class="bottom-logo" src="assets/logos/google-pay.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
