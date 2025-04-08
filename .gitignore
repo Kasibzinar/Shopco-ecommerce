@@ -1,0 +1,16 @@
+# system
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+#logs
+*.log
+
+# Env
+.env
+
+# Build 
+dist/
+build/
