@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/share.css" />
     <link rel="stylesheet" href="css/home.css" />
     <script defer src="js/script.js"></script>
 
@@ -71,9 +72,11 @@
         <h1 class="header-logo">SHOP.CO</h1>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a class="nav-link" href="#">Shop</a></li>
-            <li><a class="nav-link" href="#">On Sale</a></li>
-            <li><a class="nav-link" href="#">New Arrivals</a></li>
+            <li>
+              <a class="nav-link" href="products.html" target="_blank">Shop</a>
+            </li>
+            <li><a class="nav-link" href="#top-sell">On Sale</a></li>
+            <li><a class="nav-link" href="#new-arrivals">New Arrivals</a></li>
             <li><a class="nav-link" href="#">Brands</a></li>
           </ul>
         </nav>
@@ -106,18 +109,20 @@
           </svg>
           <input type="text" placeholder="Search for products..." />
         </div>
-        <svg
-          class="search-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          fill="#000000"
-          viewBox="0 0 256 256"
-        >
-          <path
-            d="M241.55,64.74A12,12,0,0,0,232,60H60.23L51.56,28.79A12,12,0,0,0,40,20H20a12,12,0,0,0,0,24H30.88l34.3,123.49a28.09,28.09,0,0,0,27,20.51H191a28.09,28.09,0,0,0,27-20.51l25.63-92.28A12,12,0,0,0,241.55,64.74ZM194.8,161.07A4,4,0,0,1,191,164H92.16a4,4,0,0,1-3.85-2.93L66.9,84H216.21ZM108,220a20,20,0,1,1-20-20A20,20,0,0,1,108,220Zm104,0a20,20,0,1,1-20-20A20,20,0,0,1,212,220Z"
-          ></path>
-        </svg>
+        <a href="cart.html" target="_blank">
+          <svg
+            class="search-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M241.55,64.74A12,12,0,0,0,232,60H60.23L51.56,28.79A12,12,0,0,0,40,20H20a12,12,0,0,0,0,24H30.88l34.3,123.49a28.09,28.09,0,0,0,27,20.51H191a28.09,28.09,0,0,0,27-20.51l25.63-92.28A12,12,0,0,0,241.55,64.74ZM194.8,161.07A4,4,0,0,1,191,164H92.16a4,4,0,0,1-3.85-2.93L66.9,84H216.21ZM108,220a20,20,0,1,1-20-20A20,20,0,0,1,108,220Zm104,0a20,20,0,1,1-20-20A20,20,0,0,1,212,220Z"
+            ></path>
+          </svg>
+        </a>
         <svg
           class="search-icons"
           xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +183,7 @@
         </div>
       </section>
       <div class="container">
-        <section class="arrivals">
+        <section id="new-arrivals" class="arrivals">
           <h2 class="secondary">new arrivals</h2>
           <div class="products">
             <div class="product">
@@ -272,7 +277,7 @@
           <a class="view" href="#">View All</a>
         </section>
 
-        <section class="top-selling">
+        <section id="top-sell" class="top-selling">
           <h2 class="secondary">top selling</h2>
           <div class="products">
             <div class="product">
