@@ -59,6 +59,10 @@ input:focus {
   height: 3.2rem;
 }
 
+.cross-btn {
+  cursor: pointer;
+}
+
 .top-bar p {
   color: #ccc;
   margin-left: 36rem;
@@ -173,8 +177,6 @@ input:focus {
   position: relative;
 }
 
-/*-------- CTA--------- */
-
 .newsletter {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -225,8 +227,6 @@ input:focus {
   text-decoration: none;
   cursor: pointer;
 }
-
-/* MAIN FOOTER */
 
 .footer-content {
   display: grid;
@@ -296,7 +296,6 @@ input:focus {
   transition: all 0.3s;
 }
 
-/* BOTTOM FOOTER */
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -307,4 +306,63 @@ input:focus {
 .footer-bottom p {
   font-size: 1.4rem;
   color: #00000099;
+}
+
+/**************************/
+/* BELOW 700px */
+/**************************/
+@media (max-width: 43.75em) {
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #fffffff7;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.8rem;
+  }
+
+  .header {
+    height: 6.4rem;
+    border-bottom: none;
+    box-shadow: 0 2px 6px #0000004d;
+  }
 }

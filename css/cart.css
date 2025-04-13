@@ -200,7 +200,6 @@ nav a {
   border-radius: 6.2rem;
 }
 
-
 /***********************************/
 /******** CART RESPONSIVE *******/
 /***********************************/
@@ -296,79 +295,6 @@ nav a {
 /* BELOW 620px */
 /**************************/
 @media (max-width: 38.75em) {
-  /* MOBILE NAVIGATION */
-  .btn-mobile-nav {
-    display: block;
-  }
-  .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(-100%);
-
-    display: flex;
-    padding-top: 3rem;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-
-    /* Hide navigation */
-    /* Allows NO transitions at all */
-    /* display: none; */
-
-    /* 1) Hide it visually */
-    opacity: 0;
-
-    /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
-
-    /* 3) Hide it from screen readers */
-    visibility: hidden;
-  }
-
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
-
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .nav-link:link,
-  .nav-link:visited {
-    font-size: 2.8rem;
-  }
-
-  /*** STICKY NAVIGATION ***/
-  .sticky {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #fffffff7;
-    height: 6.4rem;
-    z-index: 999;
-    box-shadow: 0 2px 6px #0000004d;
-  }
-
-  .header {
-    border-bottom: none;
-  }
-
   .breadcrumb {
     margin-top: 5rem;
   }

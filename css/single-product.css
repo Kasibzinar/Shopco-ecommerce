@@ -479,69 +479,6 @@ nav a {
     font-size: 50%;
   }
 
-  /* MOBILE NAVIGATION */
-  .btn-mobile-nav {
-    display: block;
-  }
-
-  .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(-100%);
-
-    display: flex;
-    padding-top: 3rem;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-
-    /* Hide navigation */
-    /* Allows NO transitions at all */
-    /* display: none; */
-
-    /* 1) Hide it visually */
-    opacity: 0;
-
-    /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
-
-    /* 3) Hide it from screen readers */
-    visibility: hidden;
-  }
-
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
-
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .nav-link:link,
-  .nav-link:visited {
-    font-size: 2.8rem;
-  }
-
-  .header {
-    border-bottom: none;
-    box-shadow: 0 2px 6px #0000004d;
-  }
-
   .breadcrumb {
     margin-top: 5rem;
   }
@@ -580,6 +517,14 @@ nav a {
 
   .top-bar p {
     margin-left: 0;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
   }
 
   .container {
@@ -651,13 +596,6 @@ nav a {
 /**************************/
 
 @media (max-width: 41.25em) {
-  .search-bar {
-    display: none;
-  }
-  .search-icon {
-    display: block;
-  }
-
   .search-icons {
     width: 3.2rem;
     height: 3.2rem;
@@ -801,6 +739,7 @@ nav a {
   }
 
   .footer-content {
+    grid-template-columns: 1fr;
     padding-top: 11rem;
   }
 }
