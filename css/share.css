@@ -15,7 +15,9 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
+
   overflow-x: hidden;
 }
 
@@ -45,6 +47,10 @@ input:focus {
   color: #000;
   font-size: 3.4rem;
   font-weight: 800;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 /******  TOP-BAR  ******/
