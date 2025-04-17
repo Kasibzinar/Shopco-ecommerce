@@ -170,6 +170,20 @@ input:focus {
   padding: 1.2rem;
 }
 
+.product:hover {
+  transform: scale(1.04);
+}
+
+.products a {
+  text-decoration: none;
+  color: #000;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+}
 /***********************************/
 /* FOOTER */
 /***********************************/

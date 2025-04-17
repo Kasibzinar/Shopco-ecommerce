@@ -119,21 +119,6 @@
   flex-wrap: wrap;
   column-gap: 2rem;
   margin-bottom: 4.8rem;
-  transition: all 0.6s;
-}
-
-.products:hover {
-  transform: scale(1.04);
-}
-
-.products a {
-  text-decoration: none;
-  color: #000;
-}
-
-.product {
-  display: flex;
-  flex-direction: column;
 }
 
 .all-images {

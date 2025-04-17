@@ -44,11 +44,11 @@ nav a {
   border-radius: 2rem;
 }
 
-.product img {
+.cart-product img {
   width: 100%;
 }
 
-.product {
+.cart-product {
   display: grid;
   grid-template-columns: 12.5rem 1fr;
   gap: 1.6rem;
@@ -413,11 +413,11 @@ nav a {
     text-align: center;
   }
 
-  .product {
+  .cart-product {
     grid-template-columns: 1fr;
   }
 
-  .product img {
+  .cart-product img {
     width: 50%;
   }
 
